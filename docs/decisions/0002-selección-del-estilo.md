@@ -1,10 +1,8 @@
 # Selección del Estilo
 
-* Status: proposed
+* Status: accepted
 * Deciders: Rubén, Pedro
 * Date: 2023-10-19
-
-Technical Story: ¿?¿?¿
 
 ## Context and Problem Statement
 
@@ -21,7 +19,33 @@ Migrar la arquitectura de un sistema monolítico a una basada en microservicios
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0001-1-Arquitectura-Cliente-Servidor-Dos-Capas", because Este estilo es altamente eficaz en procesamiento de datos y transacciones. Las actualizaciones centralizadas son un gran punto a favor de este estilo ya que facilita el
+control de versiones y errores, además de proporcionar un sistema optimizado. Todo esto hace que la empresa sea competitiva y capaz satisfacer las necesidades del cliente
+
+Existen varios inconvenientes, mecionados en "negative consecuences", en el estilo que hemos de tener en cuenta como la dependencia del servidor y una menor flexibilidad. Sin embargo, son factores que estamos dispuestos a asumir como “mal menor” en comparación con las restricciones que ofrece el estilo “Tiers”.
+
+El estilo por Tiers también presenta ciertos inconveninetes como: mayor
+complejidad, latencia y gestión de versiones
+
+La comunicación entre capas puede ofrecer cierta latencia lo que puede ser problemático en un entorno empresarial donde la velocidad es vital. Por ejemplo el caso en el que un cliente tenga que actualizar el inventario de su cesta en tiempo real
+donde con un estilo “Tiers” el tiempo de comunicación entre capas podría ser visible al cliente, ralentizando así el proceso.
+
+Además, la gestón de versiones puede volverse más tediosa debido al modularidad de la arquitectura.
+
+Por tanto, hemos optido por  el estilo “Cliente – Servidor” porque consideramos más flexibles sus
+inconvenientes respecto a los que ofrece el estilo “Tiers”.
+
+### Positive Consequences
+
+* Este estilo es altamente eficaz en procesamiento de datos y transacciones. Las actualizaciones centralizadas son un gran punto a favor de este estilo ya que facilita el control de versiones y errores, además de proporcionar un sistema optimizado. Todo esto hace que la empresa sea competitiva y capaz satisfacer las necesidades del cliente.
+
+### Negative Consequences
+
+* Por un lado, la dependencia del servidor en una arquitectura Cliente-Servidor de Dos Capas puede gestionarse mediante una buena planificación. Un posible ejemplo de
+esto sería establecer un sistema de servidores gemelos donde si uno de ellos tuviera algún fallo el tráfico de datos se redirigiría al otro
+* El segundo inconveniente era la poca flexibilidad ya que todas las operaciones del cliente están fuertemente relacionadas con el servidor. Sin embargo, esto también
+implica que las modificaciones sean gestionadas de manera centralizada. Un caso donde se ejemplifique esto sería la actualización del servidor. Tras ser actualizado, todos los usuarios podrían acceder a la nueva funcionalidad sin la necesidad de ir
+actualizando cliente a cliente la misma.
 
 ## Pros and Cons of the Options
 
