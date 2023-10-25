@@ -1,7 +1,7 @@
 # Selección del Estilo
 
 * Status: accepted
-* Deciders: Rubén, Pedro
+* Deciders: Rubén, Pedro, Álvaro, Juan
 * Date: 2023-10-19
 
 ## Context and Problem Statement
