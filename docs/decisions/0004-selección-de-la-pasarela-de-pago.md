@@ -1,7 +1,7 @@
 # Selección De La Pasarela De Pago
 
-* Status: proposed
-* Deciders: Rubén, Pedro
+* Status: accepted
+* Deciders: Rubén, Pedro, Juan, Álvaro
 * Date: 2023-10-31
 
 ## Context and Problem Statement
@@ -19,7 +19,26 @@ El sistema debe permitir conectarse a una pasarela de pago externa que proporcio
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0004-1: Strike", because Al seleccionar la pasarela de pago para nuestra arquitectura es importante considerar las necesidades específicas de nuestro negocio. Tras una evaluación, hemos decidido que Stripe es la opción más adecuada.
+
+En cuanto a Tarifas y Costos Stripe ofrece tan solo 2,9% + 30 cent por transacción, lo que representa un ahorro significativo respecto al 3,4% + 30 cent que cobra paypal. Además, Stripe no impone costos por mantenimiento.
+
+En cuanto a Seguridad, ambos ofrecen una seguridad robusta. Sin embargo, Stripe se distingue por un enfoque exhaustivo en la encriptación de datos y el acceso restringido.
+
+La eficiencia en el proceso de pago es algo de vital importancia y Stripe procesa los pagos de manera muy eficiente, en segundos. Esto garantiza una experiencia de compra rápida y sin interrupciones para el cliente.
+
+Por último, es importante destacar la cantidad de métodos de pago que Stripe ofrece como por ejemplo tarjetas de débito y crédito, opciones de pago digital como ApplePay o GooglePay. Esto hace que el cliente tenga una gran flexibilidad.
+
+En conclusión, Stripe ofrece una combinación de eficiencia, seguridad y flexibilidad que hace que sea una opción muy solidad para una compañía como la nuestra.
+
+### Positive Consequences
+
+* Ofrece mejores tarifas y costos por transacción respecto a Paypal
+* Un enfoque exhaustivo en la encriptación de datos y el acceso
+restringido.
+* Procesa los
+pagos de manera muy eficiente, en segundos
+* Ofrece una a cantidad de métodos de pago
 
 ## Pros and Cons of the Options
 
@@ -56,3 +75,4 @@ PayPal es una opción popular para la integración de pagos en aplicaciones. Ofr
 
 * https://blog.arcadina.com/ventajas-de-usar-paypal-para-tus-pagos-en-internet/
 * https://www.easyappcode.com/que-es-stripe-como-funciona-ventajas-e-inconvenientes
+* https://www.gluo.mx/blog/stripe-vs-paypal-cual-es-la-mejor-pasarela-de-pago
