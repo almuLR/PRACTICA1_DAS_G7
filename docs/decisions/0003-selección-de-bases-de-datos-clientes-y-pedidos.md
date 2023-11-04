@@ -1,7 +1,7 @@
 # Selección de Bases de Datos Clientes y Pedidos
 
-* Status: proposed
-* Deciders: Rubén, Pedro
+* Status: accepted
+* Deciders: Rubén, Pedro, Juan, Álvaro
 * Date: 2023-10-31
 
 ## Context and Problem Statement
@@ -22,7 +22,22 @@ la BBDD de Pedidos se encarga de almacenar los datos restantes.
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0003-1-MySQL", because Para una arquitectura de microservicios como la nuestra hemos decido que las dos bases de datos sean MySQL.
+
+MySQL tiene una distribución libre y gratuita lo que significa un ahorro importante para la compañía
+
+Otra de las ventajas que te ofrece MySQL es su versatilidad multiplataforma compatible con sistemas operativos como Linux o Windows, esto aporta gran flexibilidad a la arquitectura
+
+Además, tiene una fácil configuración lo que es importante en un entorno con microservicios, donde la agilidad y la rapidez en el despliegue de servicios son muy importantes para preservar una gran eficiencia.
+
+En conclusión, pensamos que la elección de MySQL es la mejor por su condición de código abierto, distribución gratuita y una instalación sencilla.
+
+### Positive Consequences
+
+* Código abierto
+* Distribución gratuita
+* Instalación sencilla
+* Versatilidad multiplataforma
 
 ## Pros and Cons of the Options
 
@@ -54,3 +69,4 @@ Base de datos recomendada para grandes empresas, aplicaciones empresariales a gr
 
 * https://codigosql.top/ventajas-y-desventajas-de-mysql/?expand_article=1
 * https://oraclebddepn.blogspot.com/2013/05/ventajas-y-desventajas.html
+* https://fp.uoc.fje.edu/blog/por-que-elegir-el-gestor-de-base-de-datos-mysql/
