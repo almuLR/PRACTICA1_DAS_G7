@@ -1,7 +1,7 @@
 # Proposición API gestión de microservicios
 
-* Status: proposed
-* Deciders: Rubén, Pedro
+* Status: accepted
+* Deciders: Rubén, Pedro, Álvaro, Juan
 * Date: 2023-11-09
 
 ## Context and Problem Statement
@@ -19,7 +19,28 @@ Migrar la arquitectura de un sistema monolítico a una basada en microservicios 
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0006-2-Consul", because Como API de gestión de microservicios hemos decido escoger Consul porque creemos que se adapta mejor a nuestras necesidades.
+
+Una de las ventajas que Consul ofrece, es un enfoque en la gestión y descubrimiento de servicios, lo que facilita la construcción de arquitecturas microservicios.
+
+Otra diferencia importante entre Consul y Spring Cloud radica en el hecho de que Consul proporciona una API dedicada, mientras que Spring Cloud se centra en proveer bibliotecas. Esto es esencial, ya que puede haber dependencias de versiones específicas de la biblioteca.
+
+Otro punto a favor de Consul es su orientación a los principios RESTful en su API, esto hace más fácil la integración con diversas herramientas y lenguajes de programación,favoreciendo así la compatibilidad.
+
+Por otro lado , si bien Spring Cloud se integra bien con micorservicios programados en Spring Boot, esto podría dar lugar a problemas en cuanto a flexibilidad. Depender solamente de Spring Boot como requisito para la integración limitaría el desarrollo.
+
+En conclusión, creemos que Consul es la opción más adecuada para nuestra migración hacia una arquitectura microservicios ya que asegura tener una gestión efectiva y
+escalable.
+
+### Positive Consequences
+
+* Facilita la integración
+* Consul tiene orientación a los principios RESTful en su API
+* Fexibilidad del lenguaje
+
+### Negative Consequences
+
+* Mayor complejidad
 
 ## Pros and Cons of the Options
 
